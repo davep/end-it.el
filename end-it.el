@@ -54,7 +54,7 @@ able to see that the addition worked okay and makes sense)."
           (insert "\n"))
         (insert (format format (format "%s %s" file "ends here")))
         (insert "\n"))
-    (error "end-it only makes sense in buffers that are related to a file.")))
+    (error "It only makes sense to end-it in buffers that are related to a file.")))
 
 (provide 'end-it)
 
