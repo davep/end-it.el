@@ -37,6 +37,11 @@
          "### %s")
         ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
+        ((derived-mode-p 'web-mode)
+         (cond ((string= (symbol-value 'web-mode-engine) "django")
+                "{# %s #}")
+               (t
+                "<!-- %s -->")))
         (t
          "%s")))
 
