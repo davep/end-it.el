@@ -33,7 +33,7 @@
   "Return the correct end-it format for the current buffer."
   (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode)
          ";;; %s")
-        ((derived-mode-p 'python-mode)
+        ((derived-mode-p 'python-mode 'makefile-gmake-mode)
          "### %s")
         (t
          "%s")))
