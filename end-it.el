@@ -35,7 +35,7 @@
          ";;; %s")
         ((derived-mode-p 'python-mode 'makefile-gmake-mode)
          "### %s")
-        ((derived-mode-p 'css-mode 'js-mode)
+        ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
         (t
          "%s")))
