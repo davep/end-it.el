@@ -45,6 +45,13 @@
         (t
          "%s")))
 
+(defun end-it--previous-line-empty-p ()
+  "Is the line before this one empty?"
+  (save-excursion
+    (beginning-of-line)
+    (forward-line -1)
+    (eolp)))
+
 ;;;###autoload
 (defun end-it ()
   "Add a end-of-file marker to the current buffer.
@@ -58,6 +65,8 @@ able to see that the addition worked okay and makes sense)."
             (format (end-it-format)))
         (setf (point) (point-max))
         (unless (bolp)
+          (insert "\n"))
+        (unless (end-it--previous-line-empty-p)
           (insert "\n"))
         (insert (format format (format "%s %s" file "ends here")))
         (insert "\n"))
