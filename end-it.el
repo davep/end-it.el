@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(defun end-it-format ()
+(defun end-it--format ()
   "Return the correct end-it format for the current buffer."
   (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode)
          ";;; %s")
@@ -62,7 +62,7 @@ able to see that the addition worked okay and makes sense)."
   (interactive "*")
   (if (buffer-file-name)
       (let ((file (file-name-nondirectory (buffer-file-name)))
-            (format (end-it-format)))
+            (format (end-it--format)))
         (setf (point) (point-max))
         (unless (bolp)
           (insert "\n"))
