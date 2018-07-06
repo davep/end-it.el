@@ -30,7 +30,7 @@
 ;;; Code:
 
 (defun end-it--format ()
-  "Return the correct end-it format for the current buffer."
+  "Return the correct `end-it' format for the current buffer."
   (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode)
          ";;; %s")
         ((derived-mode-p 'python-mode 'ruby-mode 'makefile-gmake-mode 'sh-mode)
@@ -70,7 +70,7 @@ able to see that the addition worked okay and makes sense)."
           (insert "\n"))
         (insert (format format (format "%s %s" file "ends here")))
         (insert "\n"))
-    (error "It only makes sense to end-it in buffers that are related to a file.")))
+    (error "It only makes sense to end-it in buffers that are related to a file")))
 
 (provide 'end-it)
 
