@@ -34,7 +34,7 @@
   (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode)
          ";;; %s")
         ((derived-mode-p 'python-mode 'ruby-mode 'makefile-gmake-mode
-                         'sh-mode 'restclient-mode 'conf-mode)
+                         'sh-mode 'restclient-mode 'conf-mode 'yaml-mode)
          "### %s")
         ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
