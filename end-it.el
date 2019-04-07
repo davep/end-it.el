@@ -48,6 +48,8 @@
                 "{# %s #}")
                (t
                 "<!-- %s -->")))
+        ((derived-mode-p 'haskell-mode)
+         "-- %s")
         (t
          "%s")))
 
