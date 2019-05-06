@@ -36,7 +36,7 @@
         ((derived-mode-p 'python-mode 'ruby-mode 'makefile-gmake-mode
                          'makefile-bsdmake-mode 'sh-mode 'restclient-mode
                          'conf-mode 'yaml-mode 'dockerfile-mode 'perl-mode
-                         'gitconfig-mode 'julia-mode)
+                         'gitconfig-mode 'julia-mode 'fish-mode)
          "### %s")
         ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
