@@ -31,7 +31,7 @@
 
 (defun end-it--format ()
   "Return the correct `end-it' format for the current buffer."
-  (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode 'clojure-mode)
+  (cond ((derived-mode-p 'lisp-mode 'emacs-lisp-mode 'clojure-mode 'scheme-mode)
          ";;; %s")
         ((derived-mode-p 'python-mode 'ruby-mode 'makefile-gmake-mode
                          'makefile-bsdmake-mode 'sh-mode 'restclient-mode
