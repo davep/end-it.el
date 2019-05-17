@@ -42,6 +42,8 @@
          "/* %s */")
         ((derived-mode-p 'rust-mode)
          "// %s")
+        ((derived-mode-p 'org-mode)
+         "# %s")
         ((derived-mode-p 'markdown-mode)
          "[//]: # (%s)")
         ((derived-mode-p 'web-mode)
