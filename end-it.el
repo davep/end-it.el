@@ -40,7 +40,7 @@
          "### %s")
         ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
-        ((derived-mode-p 'rust-mode)
+        ((derived-mode-p 'rust-mode 'zig-mode)
          "// %s")
         ((derived-mode-p 'org-mode)
          "# %s")
