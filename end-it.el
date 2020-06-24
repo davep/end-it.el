@@ -1,8 +1,8 @@
 ;;; end-it.el --- Add an "ends here" marker to a file -*- lexical-binding: t -*-
-;; Copyright 2018-2019 by Dave Pearson <davep@davep.org>
+;; Copyright 2018-2020 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 1.17
+;; Version: 1.18
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/end-it.el
 ;; Package-Requires: ((emacs "24"))
@@ -40,7 +40,7 @@
          "### %s")
         ((derived-mode-p 'c-mode 'css-mode 'js-mode)
          "/* %s */")
-        ((derived-mode-p 'rust-mode 'zig-mode)
+        ((derived-mode-p 'rust-mode 'zig-mode 'swift-mode)
          "// %s")
         ((derived-mode-p 'org-mode)
          "# %s")
