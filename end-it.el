@@ -1,8 +1,8 @@
 ;;; end-it.el --- Add an "ends here" marker to a file -*- lexical-binding: t -*-
-;; Copyright 2018-2020 by Dave Pearson <davep@davep.org>
+;; Copyright 2018-2024 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 1.18
+;; Version: 1.19
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/end-it.el
 ;; Package-Requires: ((emacs "24"))
@@ -74,7 +74,7 @@ able to see that the addition worked okay and makes sense)."
   (if (buffer-file-name)
       (let ((file (file-name-nondirectory (buffer-file-name)))
             (format (end-it--format)))
-        (setf (point) (point-max))
+        (goto-char (point-max))
         (unless (bolp)
           (insert "\n"))
         (unless (end-it--previous-line-empty-p)
